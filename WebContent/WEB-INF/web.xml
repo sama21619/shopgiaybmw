@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>JavaWebShop</display-name>
+
+	<welcome-file-list>
+		<welcome-file>Login.jsp</welcome-file>
+
+	</welcome-file-list>
+
+
+
+
+
+
+
+
+	<filter>
+		<filter-name>HeaderSecurityFilter</filter-name>
+		<filter-class>org.apache.catalina.filters.HttpHeaderSecurityFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>HeaderSecurityFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+
+
+
+
+
+
+	<session-config>
+		<cookie-config>
+			<http-only>true</http-only>
+
+		</cookie-config>
+	</session-config>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</web-app>
+
+
+
+
+
+
+
+
